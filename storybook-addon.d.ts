@@ -25,6 +25,11 @@ export interface ChromaticParameters {
   pauseAnimationAtEnd?: boolean;
 
   /**
+   * Chromatic will set the `prefers-reduced-motion media feature when creating snapshots.
+   */
+  prefersReducedMotion?: string;
+
+  /**
    * Use story-level delay to ensure a minimum amount of time (in milliseconds) has passed before Chromatic takes a
    * screenshot.
    */
